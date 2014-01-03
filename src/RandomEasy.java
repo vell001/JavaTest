@@ -1,6 +1,6 @@
-package sara;
 
-public class Random {	
+
+public class RandomEasy {	
 	
      public static void main(String[] args) {
     	 java.util.Random random = new java.util.Random();
