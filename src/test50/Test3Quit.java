@@ -1,3 +1,4 @@
+package test50;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -5,13 +6,12 @@ import java.util.Scanner;
 
 /**
  * @author VellBibi
- *4. 有200个小朋友拉成一个圆圈，从其中一个小朋友开始依次编号1－200，从1号小朋友开始循环1－3报数，
+ *有200个小朋友拉成一个圆圈，从其中一个小朋友开始依次编号1－200，从1号小朋友开始循环1－3报数，
  *数到3的小朋友就退出。编写一个Java应用程序，计算出最后一个小朋友的号码是多少。
  */
-public class game {
+public class Test3Quit {
 
 	/**
-	 * 
 	 * @param l 剩下小朋友List
 	 * @param n 第n个开始报数
 	 * @param m 数到m的人退出
@@ -21,7 +21,7 @@ public class game {
 		int s = l.size();
 		if(s <= 1) return l.get(0);
 		else {
-			n = n + m;
+			n = n + m - 1;
 			while(n >= s)
 				n = n-s;
 			
