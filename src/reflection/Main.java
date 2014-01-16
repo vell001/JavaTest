@@ -1,11 +1,12 @@
 package reflection;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+
+import reflection.factories.GlobalFactory;
 
 public class Main {
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		String className = "reflection.MyObject";
+		/*String className = "reflection.MyObject";
 		String[] classMethods = {"m1"};
 		Class<?> c = Class.forName(className);
 		Object o1 = c.newInstance();
@@ -15,6 +16,7 @@ public class Main {
 			if(m.getName().equals(classMethods[0])){
 				m.invoke(o1, "hello world");
 			}
-		}
+		}*/
+		System.out.println(GlobalFactory.createObjectFactory().createMyObject().f1);
 	}
 }
